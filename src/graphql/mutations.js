@@ -1,42 +1,90 @@
 /* eslint-disable */
 // this is an auto generated file. This will be overwritten
 
-export const createTodo = /* GraphQL */ `
-  mutation CreateTodo(
-    $input: CreateTodoInput!
-    $condition: ModelTodoConditionInput
+export const createProduct = /* GraphQL */ `
+  mutation CreateProduct(
+    $input: CreateProductInput!
+    $condition: ModelProductConditionInput
   ) {
-    createTodo(input: $input, condition: $condition) {
+    createProduct(input: $input, condition: $condition) {
       id
-      name
+      dynamicSlug
+      productName
+      createdAt
+      updatedAt
+    }
+  }
+`;
+export const updateProduct = /* GraphQL */ `
+  mutation UpdateProduct(
+    $input: UpdateProductInput!
+    $condition: ModelProductConditionInput
+  ) {
+    updateProduct(input: $input, condition: $condition) {
+      id
+      dynamicSlug
+      productName
+      createdAt
+      updatedAt
+    }
+  }
+`;
+export const deleteProduct = /* GraphQL */ `
+  mutation DeleteProduct(
+    $input: DeleteProductInput!
+    $condition: ModelProductConditionInput
+  ) {
+    deleteProduct(input: $input, condition: $condition) {
+      id
+      dynamicSlug
+      productName
+      createdAt
+      updatedAt
+    }
+  }
+`;
+export const createPerson = /* GraphQL */ `
+  mutation CreatePerson(
+    $input: CreatePersonInput!
+    $condition: ModelPersonConditionInput
+  ) {
+    createPerson(input: $input, condition: $condition) {
+      id
+      dynamicSlug
+      fullName
+      title
       description
       createdAt
       updatedAt
     }
   }
 `;
-export const updateTodo = /* GraphQL */ `
-  mutation UpdateTodo(
-    $input: UpdateTodoInput!
-    $condition: ModelTodoConditionInput
+export const updatePerson = /* GraphQL */ `
+  mutation UpdatePerson(
+    $input: UpdatePersonInput!
+    $condition: ModelPersonConditionInput
   ) {
-    updateTodo(input: $input, condition: $condition) {
+    updatePerson(input: $input, condition: $condition) {
       id
-      name
+      dynamicSlug
+      fullName
+      title
       description
       createdAt
       updatedAt
     }
   }
 `;
-export const deleteTodo = /* GraphQL */ `
-  mutation DeleteTodo(
-    $input: DeleteTodoInput!
-    $condition: ModelTodoConditionInput
+export const deletePerson = /* GraphQL */ `
+  mutation DeletePerson(
+    $input: DeletePersonInput!
+    $condition: ModelPersonConditionInput
   ) {
-    deleteTodo(input: $input, condition: $condition) {
+    deletePerson(input: $input, condition: $condition) {
       id
-      name
+      dynamicSlug
+      fullName
+      title
       description
       createdAt
       updatedAt
